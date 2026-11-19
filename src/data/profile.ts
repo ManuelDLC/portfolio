@@ -100,6 +100,28 @@ export const experience: Experience[] = [
 
 export const projects: Project[] = [
   {
+    name: "Argo AI (HackUTA)",
+    year: "2026",
+    stack: [
+      "JavaScript",
+      "Node.js",
+      "LiveKit",
+      "Gemini",
+      "ElevenLabs",
+      "MongoDB",
+      "Chert",
+    ],
+    summary:
+      "A FaceTime + iMessage AI companion for people with low vision, built in 24 hours at HackUTA 2026. Call Argo, show a label or menu, get a short spoken answer, and optionally receive a large-print, high-contrast handout in Messages.",
+    bullets: [
+      "Co-built a LiveKit agent on Chert FaceTime that uses Gemini vision OCR plus ElevenLabs STT/TTS so callers can ask about what the camera sees without installing an app.",
+      "Hardened voice turn-taking: stop/interrupt mid-read, avoid cutting questions in half, keep poem and letter read-alouds from restarting, and only send large-text iMessage PNGs when the caller asks.",
+      "Added session memory so follow-ups reuse recent call pictures, and wired Express + MongoDB Atlas event logging with a 7-day TTL for demo analytics.",
+    ],
+    repoUrl: "https://github.com/Tonys-Coding/HackUTA",
+    demoUrl: "https://youtu.be/ne_6r7vGMXg",
+  },
+  {
     name: "BeyondNeuro Cognitive Wellness Platform",
     year: "2026",
     stack: ["Vue.js", "JavaScript", "Vitest"],
